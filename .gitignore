@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # IDE
-.idea/
+#.idea/
 
 # C extensions
 *.so
@@ -130,4 +130,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-/.idea/
+#/.idea/
