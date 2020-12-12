@@ -14,3 +14,4 @@ def topics(request):
 	context = {'topics': topics}
 	return render(request, 'learning_journals/topics.html', context)
 
+##
