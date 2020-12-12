@@ -21,3 +21,6 @@ urlpatterns = [
     path('users/', include('users.urls')),
     path('', include('learning_journals.urls')),
 ]
+
+# My settings
+LOGIN_URL = 'users:login'
