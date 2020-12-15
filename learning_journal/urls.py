@@ -22,7 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')),
     path('learning_journals/', include('learning_journals.urls')),
-    url(r'', include(('learning_journal.urls', 'learning_journal'), namespace='learning_journal')),
+    url(r'', include(('learning_journals.urls', 'learning_journals'),
+        namespace='learning_journals')),
 ]
 
 # My settings
