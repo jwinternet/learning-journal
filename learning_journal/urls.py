@@ -15,15 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf.urls import url, include
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')),
     path('learning_journals/', include('learning_journals.urls')),
-    url(r'', include(('learning_journals.urls', 'learning_journals'),
-        namespace='learning_journals')),
 ]
 
 # My settings
